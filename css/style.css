@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background: var(--main-section-background);
+  backdrop-filter: blur(26px);
+}
+
 :root {
   --heading: rgb(0 10 45);
   --para: #777777;
@@ -17,6 +22,7 @@
   --bg: rgb(249 249 255);
   --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
   --shadpw: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+  --main-section-background: linear-gradient(180deg, #eff6fd 20%, #fbfdff 100%);
 }
 
 .color-white{
@@ -90,6 +96,7 @@ li {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   position: relative;
+  border-radius: 3rem;
 }
 
 .btn:hover {
@@ -205,7 +212,7 @@ Hero  Section Start
 ======================================= */
 
 .section-hero {
-  background: var(--bg);
+  height: 100vh;
 }
 
 .section-hero-data {
@@ -388,6 +395,7 @@ h3 {
 
 .portfolio-images img {
   width: 100%;
+  height: 100%;
   border-radius: 7px;
   position: relative;
   overflow: hidden;
@@ -418,7 +426,6 @@ h3 {
 .img-ovelay:hover > .overlay {
   opacity: 0.8;
   transform: translateY(0);
-  cursor: pointer;
 }
 
 .img-ovelay .overlay .common-heading {
@@ -466,6 +473,7 @@ Services Section
   box-shadow: var(--shadpw);
   border-radius: 5px;
   padding: 6.4rem 3.4rem;
+  background-color: var(--third);
   transition: all 0.2s linear;
 }
 
@@ -852,10 +860,55 @@ Footer Section
   display: inline-block;
   padding: 1.4rem 1.8rem;
   position: relative;
-  color: var(--heading);
   animation: water-wave 3s linear infinite;
   color: var(--third);
 }
+
+.f-social-icons .icons-insta {
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(193, 53, 132, 1);
+  display: inline-block;
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  animation: water-wave 3s linear infinite;
+  color: var(--third);
+}
+
+.f-social-icons .icons-youtube {
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(253, 36, 76, 1);
+  display: inline-block;
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  animation: water-wave 3s linear infinite;
+  color: var(--third);
+}
+
+
+.f-social-icons .icons-linkedin {
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(10, 102, 194, 1);
+  display: inline-block;
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  animation: water-wave 3s linear infinite;
+  color: var(--third);
+}
+
+.f-social-icons .icons-git {
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(43,49,55, 1);
+  display: inline-block;
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  animation: water-wave 3s linear infinite;
+  color: var(--third);
+}
+
 
 .f-credits p {
   text-align: center;
@@ -864,6 +917,10 @@ Footer Section
 
 footer a:hover {
   color: var(--third);
+}
+
+.role-para {
+  color: blue;
 }
 /* ===========================================
 Media Queries Section
@@ -1034,6 +1091,10 @@ Media Queries Section
 
   .section-hero img {
     width: 70%;
+  }
+
+  .section-hero {
+    height: 100%;
   }
 
   /* work section  */

@@ -104,10 +104,10 @@ document.querySelector(".scroll-top").addEventListener("click", scrollTop);
 const portfolioSection = document.querySelector(".section-portfolio");
 const contactSection = document.querySelector(".section-contact");
 
-document.querySelector(".portfolio-link").addEventListener("click", (e) => {
-    e.preventDefault();
-    portfolioSection.scrollIntoView({ behavior: "smooth" });
-});
+// document.querySelector(".portfolio-link").addEventListener("click", (e) => {
+//     e.preventDefault();
+//     portfolioSection.scrollIntoView({ behavior: "smooth" });
+// });
 
 document.querySelector(".hireme-btn").addEventListener("click", (e) => {
     e.preventDefault();
