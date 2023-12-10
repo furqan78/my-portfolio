@@ -265,7 +265,7 @@ Hero  Section Start
 
 .bio-image img {
   display: inline-block;
-  width: 100%;
+  width: 80%;
   /* box-shadow: -2rem -2rem 0rem 0rem var(--helper); */
 }
 
@@ -1090,6 +1090,10 @@ Media Queries Section
   }
 
   .section-hero img {
+    width: 100%;
+  }
+
+  .bio-image img {
     width: 100%;
   }
 
