@@ -1050,7 +1050,7 @@ Media Queries Section
   }
 
   .section-resume .grid-two-col img {
-    width: 50%;
+    width: 100%;
   }
   .resume-img {
     grid-row: 2;
