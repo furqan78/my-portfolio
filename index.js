@@ -219,3 +219,25 @@ const workSecObserver = new IntersectionObserver(workSectionObserve, {
 });
 
 workSecObserver.observe(workSection);
+
+function validate() {
+    var username = document.getElementById('username').value;
+    if (username.length < 3) {
+        alert("Please enter valid Name. Name should contains atleast 3 characters.");
+      return false; 
+    }
+
+    var subject = document.getElementById('subject').value;
+    if (subject.length < 10) {
+        alert("Please enter valid Subject. Subject should contains atleast 10 characters.");
+      return false; 
+    }
+
+    var message = document.getElementById('text-message').value;
+    if (message.length < 20) {
+        alert("Please enter valid Message. Message should contains atleast 20 characters.");
+      return false; 
+    }
+    
+    return true;
+}

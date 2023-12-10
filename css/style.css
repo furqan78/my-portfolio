@@ -266,7 +266,7 @@ Hero  Section Start
 .bio-image img {
   display: inline-block;
   width: 80%;
-  box-shadow: -2rem -2rem 0rem 0rem var(--helper);
+  /* box-shadow: -2rem -2rem 0rem 0rem var(--helper); */
 }
 
 .common-heading {
@@ -541,7 +541,7 @@ Resume Section
 
 .resume-img img {
   width: 80%;
-  box-shadow: -2rem 2rem 0 0 var(--helper);
+  /* box-shadow: -2rem 2rem 0 0 var(--helper); */
   /* box-shadow: var(--shadpw) */
 }
 
