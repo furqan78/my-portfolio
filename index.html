@@ -41,12 +41,11 @@
         <li><a class="navbar-link home-link" href="#">Home</a></li>
         <li><a class="navbar-link about-link" href="/ali-furqan-about.html">About</a></li>
         <li><a class="navbar-link service-link" href="/ali-furqan-services.html">Services</a></li>
-        <li>
-          <a class="navbar-link" href="/ali-furqan-contact.html">Contact</a>
-        </li>
-        <li><a class="navbar-link"
+        <li><a class="navbar-link service-link" href="/ali-furqan-blogs.html">Blog</a></li>
+        <li><a class="navbar-link" href="/ali-furqan-contact.html">Contact</a></li>
+        <!-- <li><a class="navbar-link"
             href="https://drive.google.com/file/d/1v6X3fKe7dzYTUK2ljwtHlLcLdbIETkhJ/view?usp=sharing" target="_blank"
-            download>Resume</a></li>
+            download>Resume</a></li> -->
       </ul>
     </nav>
 
@@ -61,21 +60,44 @@
           Our Main Hero Section Start  
     ========================================  -->
   <main>
-    <section class="section-hero section">
+    <section class="section-hero section main-section">
       <div class="container grid grid-two-col">
         <div class="section-hero-data">
-          <p class="hero-top-data">this is me</p>
-          <h1 class="hero-heading">Ali Furqan</h1>
+          <p class="hero-top-data">Welcome, I am</p>
+          <h1 class="hero-heading" id="heading-txt-change"></h1>
           <p class="hero-para">
-            <span class="role-para">A Software Developer and Freelancer.</span>
-            I am the one of them who can develop your thoughts into the real world application.
+            <!-- <span class="role-para">A Software Developer and Freelancer.</span> -->
+            A business minded person who can develop your thoughts into the real world application.
           </p>
+          <div class="f-social-small-icons">
+            <a href="https://www.instagram.com/ali_furqan_09/" target="_blank">
+              <ion-icon class="small-icons-insta" name="logo-instagram"></ion-icon>
+            </a>
+    
+            <!-- <a href="https://discord.gg/MdScmCsua6" target="_blank">
+              <ion-icon class="icons" name="logo-discord"></ion-icon>
+            </a> -->
+    
+            <a href="https://www.youtube.com/channel/UCSS37aD7gvg7tuRFPawt0RA" target="_blank">
+              <ion-icon class="small-icons-youtube" name="logo-youtube"></ion-icon>
+            </a>
+    
+            <a href="https://www.linkedin.com/in/furqan-ali-37932a239/" target="_blank">
+              <ion-icon class="small-icons-linkedin" name="logo-linkedin"></ion-icon>
+            </a>
+    
+            <a href="https://github.com/furqan78" target="_blank">
+              <ion-icon class="small-icons-git" name="logo-github"></ion-icon>
+            </a>
+          </div>
           <div>
             <a href="#" class="btn hireme-btn">Let's Connect</a>
           </div>
         </div>
 
         <div class="section-hero-image">
+            <!-- <img src="images/software-developer.svg" alt="My Freelancer and Software Developer" loading="lazy"
+              class="hero-img" /> -->
           <img src="images/ali-furqan.svg" title="Ali Furqan Freelancer" alt="Ali Furqan Freelancer" class="hero-img" />
         </div>
       </div>
@@ -93,15 +115,12 @@
       <div class="bio-data">
         <h2 class="common-heading">About Me</h2>
         <p>
-          Ali Furqan Freelancer and Software Developer. I was born in Rampur, U.P., and grew up in Bhopal, M.P. I
+          Hello, I'm Furqan Ali a Freelancer and Software Developer. I was born in Rampur, U.P., and grew up in Bhopal, M.P. I
           completed my B-Tech at SIRT Bhopal Institute and did
           a Java internship at CRISP India.
 
           I've spent three awesome years at Sankey Business Solutions, where I've fueled my passion for programming,
           technology, and business.
-
-          Outside of work, I enjoy staying active, working out, listening to music, watching movies, and diving into
-          books for fun and knowledge.
         </p>
         <!-- <div class="bio-data-stats">
           <div class="bio-stats">
@@ -136,10 +155,10 @@
           </div>
         </div> -->
 
-        <div class="bio-data-btn">
+        <!-- <div class="bio-data-btn">
           <a href="https://drive.google.com/file/d/1v6X3fKe7dzYTUK2ljwtHlLcLdbIETkhJ/view?usp=sharing"
             target="_blank" class="btn" download> Downlaod CV </a>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -578,7 +597,7 @@
     ========================================  -->
 
   <section class="section section-contact ">
-    <div class="container">
+    <div class="container contact-container">
       <h2 class="common-heading">contact us</h2>
     </div>
 
@@ -596,7 +615,7 @@
         </div>
 
         <div>
-          <input type="submit" value="send message" class="btn">
+          <input type="submit" value="Send Message" class="btn">
         </div>
       </form>
     </div>
@@ -607,13 +626,13 @@
     ========================================  -->
 
   <footer class="section section-footer ">
-    <div class="container grid grid-four-col">
+    <div class="container footer-container grid grid-four-col">
       <div class="f-about">
         <h3>About</h3>
         <p>I am a Freelancer and Software Developer who can solve your business problems in a technical way.</p>
       </div>
 
-      <div class="f-links">
+      <div class="f-links footer-sub-section">
         <h3>Links</h3>
         <ul>
           <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="./index.html">home</a></li>
@@ -626,7 +645,7 @@
         </ul>
       </div>
 
-      <div class="f-services">
+      <div class="f-services footer-sub-section">
         <h3>Services</h3>
         <ul>
           <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Mobile App Development</a></li>
@@ -635,7 +654,7 @@
         </ul>
       </div>
 
-      <div class="f-address">
+      <div class="f-address footer-sub-section">
         <h3>Have a Questions?</h3>
         <address>
           <div>

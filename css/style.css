@@ -7,22 +7,21 @@
 }
 
 body {
-  background: var(--main-section-background);
-  backdrop-filter: blur(26px);
+  background: var(--third);
 }
 
 :root {
   --heading: rgb(0 10 45);
   --para: #777777;
   --para-tint: #e4e4e4;
-  --third: #fff;
+  --third: #FFFFFF;
   --helper: #8490ff;
   --helper-tint: #f3f4ff;
   --light-grey: #adadad
   --bg: rgb(249 249 255);
   --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
   --shadpw: 0px 0px 20px 0px rgb(132 144 255 / 20%);
-  --main-section-background: linear-gradient(180deg, #eff6fd 20%, #fbfdff 100%);
+  --main-section-background: linear-gradient(180deg, #fafafa 20%, #fafafa 100%);
 }
 
 .color-white{
@@ -39,6 +38,7 @@ desktop = 4.8rem */
 html {
   font-size: 62.5%;
   font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -82,12 +82,12 @@ li {
     rgb(98 189 252) 100%
   );
 
-  padding: 1.6rem 3.2rem;
+  padding: 1.2rem 2rem;
   border: none;
   color: rgb(255 255 255);
   display: inline-block;
   font-size: 1.8rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 500;
   position: relative;
   -webkit-transition: all 0.3s ease 0s;
@@ -96,7 +96,7 @@ li {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   position: relative;
-  border-radius: 3rem;
+  border-radius: 0.5rem;
 }
 
 .btn:hover {
@@ -104,8 +104,12 @@ li {
   color: rgb(255 255 255);
 }
 
+.hireme-btn {
+  margin-top: 2rem;
+}
+
 .section {
-  padding: 9rem 0;
+  padding: 9rem 1rem;
 }
 
 .container {
@@ -136,7 +140,7 @@ Header Section Start
 
 .header {
   padding: 0 4.8rem;
-  height: 10rem;
+  height: 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -149,6 +153,10 @@ Header Section Start
   height: 3rem;
 }
 
+.section-hero {
+  background: var(--main-section-background);
+}
+
 .navbar-lists {
   display: flex;
   gap: 4.8rem;
@@ -159,9 +167,9 @@ Header Section Start
 .navbar-link:visited {
   display: inline-block;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #212529;
   transition: all 0.3s;
   font-family: "Poppins", sans-serif;
@@ -181,8 +189,8 @@ Header Section Start
 }
 
 .mobile-nav-icon {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   color: #212529;
 }
 
@@ -194,14 +202,15 @@ and we need to hide the close menu icon
 }
 
 /* sticky Navbar */
-.sticky .header {
-  position: fixed;
+.header {
+  /* position: fixed; uncomment to make navbar sticky */
+  position: relative;
   top: 0;
   left: 0;
   height: 8rem;
   width: 100%;
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1); */
   z-index: 9999;
   padding-top: 0;
   padding-bottom: 0;
@@ -223,7 +232,7 @@ Hero  Section Start
 }
 
 .hero-top-data {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: var(--heading);
   font-weight: 500;
   font-size: 1.5rem;
@@ -231,14 +240,14 @@ Hero  Section Start
 }
 
 .hero-heading {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 700;
-  font-size: 6.4rem;
+  font-size: 5rem;
 }
 
 .hero-para {
   margin-top: 1.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   max-width: 60rem;
 }
 
@@ -270,7 +279,8 @@ Hero  Section Start
 }
 
 .common-heading {
-  font-size: 4.8rem;
+  /* font-size: 4.8rem; */
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 6rem;
   text-transform: capitalize;
@@ -291,9 +301,9 @@ Hero  Section Start
 .common-heading::after {
   content: "";
   position: absolute;
-  top: 128%;
+  top: 131%;
   left: 1.5rem;
-  width: 30%;
+  width: 20%;
   height: 0.3rem;
   background: var(--helper);
 }
@@ -308,7 +318,6 @@ Hero  Section Start
 h3 {
   font-size: 1.8rem;
   font-weight: 400;
-  margin-bottom: 1rem;
 }
 
 .bio-progress-bar {
@@ -796,7 +805,6 @@ textarea {
 } */
 
 .section-contact-main input[type="submit"] {
-  max-width: 30%;
   border: none;
 }
 
@@ -810,7 +818,7 @@ Footer Section
 
 .section-footer h3 {
   color: var(--third);
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .f-about p {
@@ -854,8 +862,8 @@ Footer Section
 }
 
 .f-social-icons .icons {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   background-color: rgb(144 172 209 / 20%);
   display: inline-block;
   padding: 1.4rem 1.8rem;
@@ -865,8 +873,8 @@ Footer Section
 }
 
 .f-social-icons .icons-insta {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   background-color: rgba(193, 53, 132, 1);
   display: inline-block;
   padding: 1.4rem 1.8rem;
@@ -876,8 +884,8 @@ Footer Section
 }
 
 .f-social-icons .icons-youtube {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   background-color: rgba(253, 36, 76, 1);
   display: inline-block;
   padding: 1.4rem 1.8rem;
@@ -888,8 +896,8 @@ Footer Section
 
 
 .f-social-icons .icons-linkedin {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   background-color: rgba(10, 102, 194, 1);
   display: inline-block;
   padding: 1.4rem 1.8rem;
@@ -899,14 +907,88 @@ Footer Section
 }
 
 .f-social-icons .icons-git {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   background-color: rgba(43,49,55, 1);
   display: inline-block;
   padding: 1.4rem 1.8rem;
   position: relative;
   animation: water-wave 3s linear infinite;
   color: var(--third);
+}
+
+/* small icons */
+
+.f-social-small-icons {
+  margin: 2rem 0;
+  text-align: center;
+  color: #adadad;
+}
+
+.f-social-small-icons .small-icons-insta {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(193, 53, 132, 1);
+  display: inline-block;
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  animation: water-wave 3s linear infinite;
+  color: var(--third);
+}
+
+.f-social-small-icons .small-icons-youtube {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(253, 36, 76, 1);
+  display: inline-block;
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  animation: water-wave 3s linear infinite;
+  color: var(--third);
+}
+
+
+.f-social-small-icons .small-icons-linkedin {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(10, 102, 194, 1);
+  display: inline-block;
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  animation: water-wave 3s linear infinite;
+  color: var(--third);
+}
+
+.f-social-small-icons .small-icons-git {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(43,49,55, 1);
+  display: inline-block;
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  animation: water-wave 3s linear infinite;
+  color: var(--third);
+}
+
+.scrollTop-style {
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--helper);
+  display: inline-block;
+  padding: 2rem;
+  position: fixed;
+  animation: water-wave 3s linear infinite;
+  color: var(--third);
+  right: 2rem;
+  bottom: 2rem;
+  display: flex;
+  margin-left: auto;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.scroll-top {
+  font-size: 2rem;
 }
 
 
@@ -920,8 +1002,17 @@ footer a:hover {
 }
 
 .role-para {
-  color: blue;
+  color: var(--helper)
 }
+
+.section-contact {
+  padding: 9rem 2rem;
+}
+
+/* uncomment below code when you enable sticky navbar */
+/* .main-section {
+  margin-top: 0rem;
+} */
 /* ===========================================
 Media Queries Section
 ======================================= */
@@ -931,7 +1022,7 @@ Media Queries Section
     max-width: 130rem;
   }
   .navbar-lists {
-    gap: 3.4rem;
+    gap: 2.5rem;
   }
 }
 
@@ -941,7 +1032,7 @@ Media Queries Section
     max-width: 110rem;
   }
   .navbar-lists {
-    gap: 3.4rem;
+    gap: 2.5rem;
   }
 }
 
@@ -949,7 +1040,7 @@ Media Queries Section
 @media (max-width: 980px) {
   /* to make all the container with same padding  */
   .container {
-    padding: 0 3.2rem;
+    padding: 0 2rem;
   }
 
   html {
@@ -961,12 +1052,8 @@ Media Queries Section
     display: block;
     /* background-color: #212529; */
     z-index: 99999;
-    border: 3px solid #212529;
+    /* border: 3px solid #212529; */
     color: #212529;
-  }
-
-  .header {
-    position: relative;
   }
 
   .header .logo {
@@ -977,7 +1064,7 @@ Media Queries Section
   .navbar {
     width: 100%;
     height: 100vh;
-    background: #e7f5ff;
+    background: var(--third);
     position: absolute;
     top: 0;
     left: 0;
@@ -993,13 +1080,17 @@ Media Queries Section
 
   .navbar-lists {
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    margin-right: auto;
+    margin-left: 4rem;
+    margin-bottom: auto;
+    margin-top: 10rem;
   }
 
   .navbar .navbar-lists .navbar-link:link,
   .navbar .navbar-lists .navbar-link:visited {
-    color: #212529;
-    font-size: 3.2rem;
+    color: var(--helper);
+    font-size: 2rem;
   }
 
   .active .navbar {
@@ -1064,6 +1155,31 @@ Media Queries Section
 
   .section-footer .grid-four-col {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-container {
+    display: block;
+  }
+
+  .footer-sub-section {
+    margin-top: 3rem;
+  }
+
+  .common-heading {
+    font-size: 2rem;
+  }
+
+  .hero-heading {
+    font-size: 4rem;
+    margin-top: 1rem;
+  }
+
+  .section-contact {
+    padding: 9rem 2rem;
+  }
+
+  .contact-container {
+    padding: 0rem;
   }
 }
 
