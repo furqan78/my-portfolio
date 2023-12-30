@@ -229,7 +229,7 @@ var txt1 = 'Ali Furqan';
 var txt2 = 'A Freelancer';
 var txt3 = 'A Developer';
 var txt4 = 'A Youtuber';
-var mainText = ['Ali Furqan', 'A Freelancer', 'A ', 'A Youtuber'];
+var mainText = ['Ali Furqan','A Developer','A Freelancer', 'A Youtuber'];
 var speed = 70;
 
 const textChange = document.getElementById("heading-txt-change");
@@ -238,52 +238,25 @@ if(textChange){
         typeWriter();
 }
 
-// if (textChange) {
-//     for (let i = 0; i < 4; i++) {
-//         setTimeout(() => {
-         
-//             switch (true) {
-//                 case i == 0:
-//                     textChange.innerHTML = '';
-//                     mainText = txt1;
-//                     typeWriter();
-//                     break;
-//                 case i == 1:
-//                     textChange.innerHTML = '';
-//                     mainText = txt2;
-//                     typeWriter();
-//                     break;
-//                 case i == 2:
-//                     textChange.innerHTML = '';
-//                     mainText = txt3;
-//                     typeWriter();
-//                     break;
-//                 case i == 3:
-//                     textChange.innerHTML = '';
-//                     mainText = txt4;
-//                     typeWriter();
-//                     break;
-//             }
-//         }, 2000);
-//     }
-// }
-
 
 
 function typeWriter() {
     if (mainText[j]) {
-        console.log(mainText[j], 'getting main texrt');
         if (i < mainText[j].length) {
             textChange.innerHTML += mainText[j].charAt(i);
             i++;
             setTimeout(typeWriter, speed);
         } else {
-            // textChange.innerHTML = '';
-            // if(j <= mainText.length){
-            //     j = 0;
-            // }else{
-            //     j++;
-            // }
+            setTimeout(() => {     
+                textChange.innerHTML = '';
+                if(j < mainText.length - 1){
+                    j++;
+                }else{
+                    j=0;
+                }
+                i=0;
+                typeWriter();
+            }, 1000);
         }
     }
 }
