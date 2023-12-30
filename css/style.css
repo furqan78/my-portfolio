@@ -1009,6 +1009,61 @@ footer a:hover {
   padding: 9rem 2rem;
 }
 
+
+/* Blog Section CSS */
+
+.blog-container {
+  text-align: center;
+  box-shadow: var(--shadpw);
+  border-radius: 5px;
+  padding: 3rem;
+  background-color: var(--third);
+  width: 50%;
+}
+
+.blog-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: start;
+}
+
+.blog-content {
+  text-align: start;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.read-more-btn {
+  color: var(--helper);
+}
+
+.main-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.publish-para {
+  font-size: 1.3rem;
+  color: rgb(75 85 99/0.7);
+  text-align: start;
+}
+
+.blog-author-para {
+  color: black;
+}
+
+.publish-author-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.author-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5rem;
+}
 /* uncomment below code when you enable sticky navbar */
 /* .main-section {
   margin-top: 0rem;
@@ -1089,7 +1144,7 @@ Media Queries Section
 
   .navbar .navbar-lists .navbar-link:link,
   .navbar .navbar-lists .navbar-link:visited {
-    color: var(--helper);
+    color: #212529;
     font-size: 2rem;
   }
 
@@ -1180,6 +1235,14 @@ Media Queries Section
 
   .contact-container {
     padding: 0rem;
+  }
+
+  .blog-container {
+    width: 100%;
+  }
+
+  .main-container {
+    flex-wrap: wrap;
   }
 }
 

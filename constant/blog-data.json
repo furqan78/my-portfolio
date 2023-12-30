@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Secure Software Developement Lifecycle",
+        "content": "Security is especially important part of any application that covers critical functionality. It can be as simple as securing your database or customers data from the attackers",
+        "publish_date": "November 15, 2023",
+        "author": "Ali Furqan",
+        "author_img": "./images/furqan.png",
+        "redirect_path": "../secure-sdlc.html"
+    },
+    {
+        "title": "Deveops Automation Process",
+        "content": "In today's fast-paced, technology-driven world, businesses are under constant pressure to innovate, adapt, and deliver software at an unprecedented speed. Traditional software development methodologies, which often involve siloed development and operations teams, can no longer keep up with the demands of the digital era.",
+        "publish_date": "September 22, 2023",
+        "author": "Ali Furqan",
+        "author_img": "./images/furqan.png",
+        "redirect_path": "../secure-sdlc.html"
+    }
+]
