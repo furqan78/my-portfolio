@@ -1064,6 +1064,59 @@ footer a:hover {
   height: 3rem;
   border-radius: 5rem;
 }
+
+/* Blogs template page css */
+
+.blog-content-container {
+  margin: 0rem 10rem;
+  padding: 3rem 4rem;
+  box-shadow: var(--shadpw);
+  border-radius: 5px;
+  background-color: var(--third);
+  text-align: center;
+}
+
+.blog-page-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.publisher-container-blog {
+  margin: 2rem;
+  justify-content: center;
+}
+
+.author-img-blog {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5rem;
+}
+
+.publish-para-blog {
+  font-size: 1.5rem;
+  color: rgb(75 85 99/0.7);
+  text-align: start;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.blog-content-para {
+  margin-top: 2rem;
+  color: black;
+  font-size: 1.8rem;
+  text-align: start;
+}
+
+.blog-page-img {
+  margin: 4rem 0rem;
+}
+
+.blog-page-sub-title {
+  text-align: start;
+  font-size: 2.3rem;
+  margin-top: 2rem;
+}
 /* uncomment below code when you enable sticky navbar */
 /* .main-section {
   margin-top: 0rem;

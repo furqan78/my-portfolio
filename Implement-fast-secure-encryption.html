@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Implement Secure and Fast Encryption | Ali Furqan</title>
+  <meta name="description"
+    content="Implement a Secure and Fast Encryption using Symmetric and Asymmetric Encryption." />
+  <meta name="keywords"
+    content="Encryption, Implement Encryption, Implement Secure Encryption, Implement Fast Encryption, Symmetric Encryption, Asymmetric Encryption, RSA, AES" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" href="./images/favicon.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/blog.css" />
+
+  <meta name="google-adsense-account" content="ca-pub-2394344541784534" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2394344541784534"
+    crossorigin="anonymous"></script>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MEP5Z0SQ8L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-MEP5Z0SQ8L');
+</script>
+
+<body>
+  <header class="header">
+    <h3>Developer { }</h3>
+    <nav class="navbar">
+      <ul class="navbar-lists">
+        <li><a class="navbar-link home-link" href="/index.html">Home</a></li>
+        <li><a class="navbar-link about-link" href="/ali-furqan-about.html">About</a></li>
+        <li><a class="navbar-link service-link" href="/ali-furqan-services.html">Services</a></li>
+        <li><a class="navbar-link service-link" href="/ali-furqan-blogs.html">Blog</a></li>
+        <li><a class="navbar-link" href="/ali-furqan-contact.html">Contact</a></li>
+        <!-- <li><a class="navbar-link"
+            href="https://drive.google.com/file/d/1v6X3fKe7dzYTUK2ljwtHlLcLdbIETkhJ/view?usp=sharing" target="_blank"
+            download>Resume</a></li> -->
+      </ul>
+    </nav>
+
+    <div class="mobile-navbar-btn">
+      <ion-icon class="mobile-nav-icon" name="menu-outline" class="mobile-nav-icon"></ion-icon>
+
+      <ion-icon class="mobile-nav-icon" name="close-outline" class="mobile-nav-icon"></ion-icon>
+    </div>
+  </header>
+
+  <!-- ======================================== 
+           Bio Data Section Start  
+    ========================================  -->
+  <section class="section-biodata blog-section main-section">
+    <div class="container">
+      <div class="bio-data">
+        <div class="blog-content-container">
+          <h1 class="blog-page-title">How to Implement Secure and Fast Encryption</h1>
+          <div class="publish-author-container publisher-container-blog">
+            <img class="author-img-blog" src="./images/furqan.png">
+            <p class="publish-para-blog">
+                <span class="blog-author-para">Ali Furqan</span> - January 6, 2024 <ion-icon name="book"></ion-icon> 5 min read
+            </p>
+        </div>
+          <p class="blog-content-para">Organizations have few essential tools at their clearance to ensure strong cybersecurity which includes encryption, authentication, and authorization. Encryption is one of the most beneficial, first-level coats to protecting your data and staying cyber strong.</p>
+          <img class="blog-page-img" src="/images/blog/implement-encryption/implement-encryption.jpg" alt="Implement Secure and Fast Encryption" title="Implement Secure and Fast Encryption" />
+          <p class="blog-content-para">In this blog, you’ll learn about what it is and what occurs when you encrypt your data. You’ll also understand how end-to-end data encryption helps to avoid data breaches so you can better defend your business from cyberattacks.</p>
+          
+          <h2 class="blog-page-sub-title">What is Encryption?</h2>
+          <p class="blog-content-para">Encryption is the procedure through which data is encoded so that it continues to be hidden from or inaccessible to unauthorized users. It helps protect private information, sensitive data, and can enhance the security of interaction between client apps and servers. In real meaning, when your data is encrypted, even if an unauthorized person or entity gets access to it, they will not be able to read it.</p>
+          
+          <h2 class="blog-page-sub-title">How to encrypt data</h2>
+          <p class="blog-content-para">The procedure itself is straightforward: an encryption key uses an algorithm to translate (encode) plaintext or readable data into unreadable data or ciphertext. Only the corresponding decryption key can decode the jumbled ciphertext back into readable plaintext.</p>
+        
+          <h2 class="blog-page-sub-title">Types of Encryption Systems</h2>
+        <p class="blog-content-para">There are many different types of encryption algorithms and methods to pick from, so how do you know which one is the securest choice for your cybersecurity essentials? Let’s begin with the most common types of encryption systems: symmetric vs asymmetric encryption.</p>
+        
+        <h2 class="blog-page-sub-title">Symmetric Encryption</h2>
+        <img class="blog-page-img" src="/images/blog/implement-encryption/symmetric-encryption.png" alt="Symmetric Encryption" title="Symmetric Encryption" />
+        <p class="blog-content-para">Symmetric encryption relies on a single key for both encryption and decryption, necessitating the use of the same key for both processes. These algorithms excel in bulk data encryption, offering speed and straightforward implementation through hardware. However, a drawback lies in the fact that anyone possessing the decryption key can decrypt the data, even if they're not the intended recipient.</p>
+        
+        <h2 class="blog-page-sub-title">Asymmetric Encryption</h2>
+        <img class="blog-page-img" src="/images/blog/implement-encryption/asymmetric-encryption.png" alt="Asymmetric Encryption" title="Asymmetric Encryption" />
+        <p class="blog-content-para">Asymmetric encryption involves the use of two distinct keys: a public key, responsible for encrypting sensitive information or data, and a private key, responsible for decrypting the encrypted data. The public key can be freely distributed, allowing others to encrypt data that only the possessor of the corresponding private key can decrypt. This private key must be kept confidential to ensure the security of communication or information exchange.</p>
+        <p class="blog-content-para">A collection of algorithms exists for both symmetric and asymmetric encryption, offering choices based on specific use cases. <strong>AES (Advanced Encryption Standard)</strong> serves as an established symmetric encryption method, while <strong>RSA (Rivest, Shamir, and Adleman)</strong> stands as a widely adopted asymmetric encryption technique within the IT industry. So, as we know that the <strong>AES Encryption</strong> is faster but not very secure and <strong>RSA Encryption</strong> is secure but not much faster. To achieve a secure and efficient encryption method for sensitive data transmission, a hybrid approach combining symmetric and asymmetric encryption is necessary. While symmetric encryption, like AES, uses a single key for both encryption and decryption, it poses a risk if the key is compromised. On the other hand, asymmetric encryption, such as RSA, utilizes a pair of keys (public and private) for encryption and decryption, providing enhanced security but often with slower processing and size limitations.</p>
+
+        <h2 class="blog-page-sub-title">Combining Symmetric and Asymmetric Encryption</h2>
+        <p class="blog-content-para">The proposed solution involves leveraging both encryption methods harmoniously. Asymmetric encryption can be used to securely exchange a symmetric key between the client and server. Once the symmetric key is established, it enables faster encryption and decryption of the bulk data while maintaining the security offered by the asymmetric encryption's key exchange mechanism. This combined approach ensures both strong security and optimal performance for handling sensitive information in bank applications. In this type of encryption individual symmetric keys would be generated for each session and exchange those keys securely with the help of Asymmetric encryption just like the <strong>TLS Handshake process</strong>.</p>
+
+        <h2 class="blog-page-sub-title">TLS/SSL Handshake</h2>
+        <p class="blog-content-para">A Secure Sockets Layer (SSL) / Transport Layer Security (TLS) handshake is the procedure of creating a safe and secure encrypted communication channel between the client (user’s browser) and the server (web server). Hence, protecting user information and ensuring risk-free transactions by preventing an attacker from reading or changing the actual data.</p>
+
+        <h2 class="blog-page-sub-title">What happens during a TLS/SSL Handshake Process</h2>
+        <p class="blog-content-para">There are few steps which need to be complete TLS/SSL Handshake depend on the encryption algorithm used, but the essential process is as follows:</p>
+        <img class="blog-page-img" src="/images/blog/implement-encryption/ssl-handshake-process.png" alt="TLS or SSL Handshake Process" title="TLS or SSL Handshake Process" />
+        <p class="blog-content-para">
+            <strong>Step 1:</strong> Browser initiates a request to the web server to access an application or website. <br><br>
+            <strong>Step 2:</strong> Server transmits an SSL certificate containing its public key, utilized for encrypting data. Within its infrastructure, the web server holds both a public and a private key. The server shares the public key with end-users for encryption purposes while protecting the private key securely within its restrictions, as it remains inaccessible and undisclosed to external entities.<br><br>
+            <strong>Step 3:</strong> Upon receiving the SSL certificate and public key, the browser conducts several validations: it verifies the certificate's root against a catalog of trusted CAs (Certificate Authorities), ensures the certificate's validity by confirming it's unexpired and unrevoked, and checks that its common name aligns with the connected website. If the certificate gains the browser's trust, it initiates the creation of a symmetric key. This key is encrypted using the web server's received public key. Subsequently, the browser transmits the encrypted symmetric session key back to the web server, facilitating the exchange and establishment of a secure communication channel.<br><br>
+            <strong>Step 4:</strong> Server receives encrypted symmetric key and decrypts the key with the help of private key which stores in the web server.<br><br>
+            <strong>Step 5:</strong> With the successful and secure exchange of keys, both the client and server are now capable of encrypting and decrypting bulk data, enabling secure and efficient communication between them.<br>
+        </p>
+
+        <h2 class="blog-page-sub-title">Conclusion</h2>
+        <p class="blog-content-para">
+            So, by utilizing a combination of symmetric and asymmetric encryption, you can implement a robust and convenient encryption method, ensuring both secure transmission and fast encryption and decryption of bulk data.
+        </p>
+        <p class="blog-content-para">
+            I hope you liked this informational article and have learnt something new. Stay Happy!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2394344541784534"
+    crossorigin="anonymous"></script>
+  <!-- home 1 -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2394344541784534" data-ad-slot="7378856593"
+    data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+  <!-- ======================================== 
+          Our footer Section   
+    ========================================  -->
+
+  <footer class="section section-footer ">
+    <div class="container footer-container grid grid-four-col">
+      <div class="f-about">
+        <h3>About</h3>
+        <p>I am a Freelancer ande Software Developer who can solve your business problems in a technical way.</p>
+      </div>
+
+      <div class="f-links footer-sub-section">
+        <h3>Links</h3>
+        <ul>
+          <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="./index.html">home</a></li>
+          <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="./ali-furqan-about.html">about</a>
+          </li>
+          <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a
+              href="./ali-furqan-services.html">services</a></li>
+          <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a
+              href="./ali-furqan-contact.html">contact</a></li>
+        </ul>
+      </div>
+
+      <div class="f-services footer-sub-section">
+        <h3>Services</h3>
+        <ul>
+          <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">web design</a></li>
+          <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">web development</a></li>
+          <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Web SEO</a></li>
+        </ul>
+      </div>
+
+      <div class="f-address footer-sub-section">
+        <h3>Have a Questions?</h3>
+        <address>
+          <div>
+            <p> <span><ion-icon name="location-outline"></ion-icon></span> Bhopal, India </p>
+          </div>
+
+          <div>
+            <p class="flex-center"> <span><ion-icon name="call-outline"></ion-icon></span> <a class="color-white"
+                href="tel:+919179544270"> +91 9179544270 </a>
+            </p>
+          </div>
+
+          <div>
+            <p class="flex-center"> <span><ion-icon name="mail-outline"></ion-icon></span> <a class="color-white"
+                href="mailto:furqankhan8224866@gmail.com">
+                furqankhan8224866@gmail.com </a> </p>
+          </div>
+        </address>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="f-social-icons">
+        <a href="https://www.instagram.com/ali_furqan_09/" target="_blank">
+          <ion-icon class="icons-insta" name="logo-instagram"></ion-icon>
+        </a>
+
+        <!-- <a href="https://discord.gg/MdScmCsua6" target="_blank">
+            <ion-icon class="icons" name="logo-discord"></ion-icon>
+          </a> -->
+
+        <a href="https://www.youtube.com/channel/UCSS37aD7gvg7tuRFPawt0RA" target="_blank">
+          <ion-icon class="icons-youtube" name="logo-youtube"></ion-icon>
+        </a>
+
+        <a href="https://www.linkedin.com/in/furqan-ali-37932a239/" target="_blank">
+          <ion-icon class="icons-linkedin" name="logo-linkedin"></ion-icon>
+        </a>
+
+        <a href="https://github.com/furqan78" target="_blank">
+          <ion-icon class="icons-git" name="logo-github"></ion-icon>
+        </a>
+      </div>
+
+      <div class="f-credits">
+        <p>Copyright ©2045 All rights reserved</p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- ======================================== 
+          Our JavaScript Section   
+    ========================================  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./script/blog-script.js"></script>
+</body>
+
+</html>
