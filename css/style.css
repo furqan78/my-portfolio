@@ -1068,7 +1068,7 @@ footer a:hover {
 /* Blogs template page css */
 
 .blog-content-container {
-  margin: 0rem 10rem;
+  margin: 0rem 13rem;
   padding: 3rem 4rem;
   box-shadow: var(--shadpw);
   border-radius: 5px;
@@ -1084,6 +1084,7 @@ footer a:hover {
 .publisher-container-blog {
   margin: 2rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .author-img-blog {
@@ -1098,6 +1099,8 @@ footer a:hover {
   text-align: start;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -1296,6 +1299,24 @@ Media Queries Section
 
   .main-container {
     flex-wrap: wrap;
+  }
+
+  /* blog page template css mobile responsive */
+  .blog-content-container {
+    margin: 0rem;
+    padding: 2rem;
+    box-shadow: var(--shadpw);
+    border-radius: 5px;
+    background-color: var(--third);
+    text-align: center;
+  }
+
+  .blog-page-title {
+    font-size: 2rem;
+  }
+
+  .blog-page-img {
+    width: 100%;
   }
 }
 
