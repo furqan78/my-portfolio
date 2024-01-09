@@ -1,7 +1,17 @@
 .blog-section {
     padding: 5rem 1rem;
 }
+
 .blog-title-heading {
     text-align: center;
     font-size: 4rem;
+}
+
+.blog-anchor-link {
+    color: blue;
+}
+
+.blog-image-full-width {
+    width: 90%;
+    border: 1px solid #ccc;
 }

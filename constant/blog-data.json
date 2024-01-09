@@ -6,6 +6,14 @@
         "author": "Ali Furqan",
         "author_img": "./images/furqan.png",
         "redirect_path": "../Implement-fast-secure-encryption.html"
+    },
+    {
+        "title": "How to deploy a website for free using GitHub",
+        "content": "Many people face challenges in finding a free platform for website deployment. In this blog, we'll explore the process of deploying a website using GitHub. Through GitHub, you can exhibit open-source projects, host a blog, or even share your resume.",
+        "publish_date": "January 10, 2024",
+        "author": "Ali Furqan",
+        "author_img": "./images/furqan.png",
+        "redirect_path": "../blog-html/deploy-website-using-github.html"
     }
 ]
 
