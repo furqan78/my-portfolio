@@ -1,52 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://alifurqan.in/</loc>
-  <lastmod>2024-01-10T07:23:27+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://alifurqan.in/</loc>
+<lastmod>2024-01-11T08:44:27+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://alifurqan.in/ali-furqan-about.html</loc>
-  <lastmod>2024-01-10T07:23:27+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://alifurqan.in/ali-furqan-about.html</loc>
+<lastmod>2024-01-11T08:44:27+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://alifurqan.in/ali-furqan-services.html</loc>
-  <lastmod>2024-01-10T07:23:27+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://alifurqan.in/ali-furqan-services.html</loc>
+<lastmod>2024-01-11T08:44:28+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://alifurqan.in/ali-furqan-blogs.html</loc>
-  <lastmod>2024-01-10T07:23:27+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://alifurqan.in/ali-furqan-blogs.html</loc>
+<lastmod>2024-01-11T08:44:27+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://alifurqan.in/ali-furqan-contact.html</loc>
-  <lastmod>2024-01-10T07:23:27+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://alifurqan.in/ali-furqan-contact.html</loc>
+<lastmod>2024-01-11T08:44:27+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://alifurqan.in/Implement-fast-secure-encryption.html</loc>
-  <lastmod>2024-01-10T07:23:27+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://alifurqan.in/Implement-fast-secure-encryption.html</loc>
+<lastmod>2024-01-11T08:44:27+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://alifurqan.in/blog-html/deploy-website-using-github.html</loc>
-  <lastmod>2024-01-10T07:23:27+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://alifurqan.in/deploy-website-using-github.html</loc>
+<lastmod>2024-01-11T08:44:27+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://alifurqan.in/index.html</loc>
-  <lastmod>2024-01-10T07:23:27+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://alifurqan.in/index.html</loc>
+<lastmod>2024-01-11T08:44:28+00:00</lastmod>
+<priority>0.80</priority>
 </url>
-
-
 </urlset>
