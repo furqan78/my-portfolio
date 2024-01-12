@@ -191,7 +191,7 @@ const workSectionObserve = (entries) => {
 
 
     const counterNum = document.querySelectorAll(".counter-numbers");
-    const speed = 15;
+    const speed = 20;
 
     counterNum.forEach((curNumber) => {
         const updateNumber = () => {

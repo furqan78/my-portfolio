@@ -488,6 +488,10 @@ work data Section
   color: var(--third);
 }
 
+.counter-numbers {
+  font-size: 3rem;
+}
+
 /* ===========================================
 Services Section
 ======================================= */
