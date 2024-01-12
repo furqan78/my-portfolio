@@ -39,7 +39,10 @@
 
 <body>
   <header class="header">
-    <h3>Developer { }</h3>
+    <div class="web-logo-title-container">
+      <img class="web-logo" src="./images/favicon.png" alt="Ali Freelancer" title="Ali Freelancer" />
+      <h1>Freelancer</h1>
+    </div>
     <nav class="navbar">
       <ul class="navbar-lists">
         <li><a class="navbar-link home-link" href="#">Home</a></li>
@@ -68,13 +71,13 @@
       <div class="container grid grid-two-col">
         <div class="section-hero-data">
           <p class="hero-top-data">Welcome, I am</p>
-          <h1 class="hero-heading" id="heading-txt-change"></h1>
+          <h3 class="hero-heading" id="heading-txt-change"></h3>
           <p class="hero-para">
             <!-- <span class="role-para">A Software Developer and Freelancer.</span> -->
             A business minded person who can develop your thoughts into the real world application.
           </p>
           <div class="f-social-small-icons">
-            <a href="https://www.instagram.com/ali_furqan_09/" target="_blank">
+            <a href="https://www.instagram.com/ali_freelancer_/" target="_blank">
               <ion-icon class="small-icons-insta" name="logo-instagram"></ion-icon>
             </a>
 
@@ -108,71 +111,104 @@
     </section>
   </main>
 
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2394344541784534"
-    crossorigin="anonymous"></script>
-  <!-- home 1 -->
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2394344541784534" data-ad-slot="7378856593"
-    data-ad-format="auto" data-full-width-responsive="true"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+  <!-- ======================================== 
+        Our Service Section Start  
+  ========================================  -->
+  <section class="section-services section section--hidden main-section">
+    <div class="container">
+      <h2 class="common-heading">See What Our Team <br><span class="red-color-txt">Offers</span> & What We <br><span class="light-blue-txt">Provide!</span></h2>
+    </div>
+
+    <div class="container grid grid-three-col">
+      <div class="service-box">
+        <div class="service-icon-title">
+          <ion-icon name="logo-react" class="serive-icon"></ion-icon>
+          <h3>web development</h3>
+        </div>
+        <p class="service-para">
+          <ion-icon name="checkmark-outline"></ion-icon> Design, Develop Complete Website<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Host Website<br>
+          <ion-icon name="checkmark-outline"></ion-icon> SEO and Speed-Optimized Website<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Fully responsive on all devices<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Social Media integrations.<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Word Press Website / Clone Website<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Reviews and testimonials<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Google Analytics Integration<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Google Adsense Integration<br>
+          <ion-icon name="checkmark-outline"></ion-icon> SSL Integration<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Affordable Prices
+        </p>
+      </div>
+
+      <div class="service-box">
+        <div class="service-icon-title">
+          <ion-icon name="code-slash-outline" class="serive-icon"></ion-icon>
+          <h3>Maintenance/Bug Fixing</h3>
+        </div>
+        <p class="service-para">
+          <ion-icon name="checkmark-outline"></ion-icon> Design, Develop Enhancement<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Host Developed Website<br>
+          <ion-icon name="checkmark-outline"></ion-icon> SEO and Speed-Optimized Website<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Social Media integrations.<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Add Reviews, testimonials<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Google Analytics Integration<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Google Adsense Integration<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Fix Bugs and Errors<br>
+          <ion-icon name="checkmark-outline"></ion-icon> SSL Integration<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Affordable Prices
+        </p>
+      </div>
+      <div class="service-box">
+        <div class="service-icon-title">
+          <ion-icon class="serive-icon" name="globe-outline"></ion-icon>
+          <h3>Google SEO</h3>
+        </div>
+        <p class="service-para">
+          <ion-icon name="checkmark-outline"></ion-icon> Content, Image Optimized<br>
+          <ion-icon name="checkmark-outline"></ion-icon> keyword Optimized<br>
+          <ion-icon name="checkmark-outline"></ion-icon> SEO Best Practices<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Google Search Console Reports<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Rank Your Website<br>
+          <ion-icon name="checkmark-outline"></ion-icon> SSL Integration<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Reduce Page Load Time<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Affordable Prices
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-biodata section main-section">
+    <div class="container">
+      <div class="bio-data">
+        <h2 class="common-heading">Check Out What is <br><span class="red-color-txt">Beneficial</span> In Our Latest <br><span class="light-blue-txt">Blog!</span></h2>
+        <div class="main-container" id="blog-main-container">
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- ======================================== 
-           Bio Data Section Start  
+          work completed counter section Start  
     ========================================  -->
-  <section class="section-biodata section">
-    <div class="container grid grid-two-col">
-      <div class="bio-image">
-        <img src="images/journey.svg" title="Ali Furqan Journey" alt="Ali Furqan Journey" />
+
+  <section class="section-work-data section ">
+    <div class="container grid grid-four-col">
+      <div>
+        <h2 data-number="15" class="counter-numbers">0+</h2>
+        <p>project completed</p>
       </div>
-      <div class="bio-data">
-        <h2 class="common-heading">About Me</h2>
-        <p>
-          Hello, I'm Furqan Ali a Freelancer and Software Developer. I was born in Rampur, U.P., and grew up in Bhopal,
-          M.P. I
-          completed my B-Tech at SIRT Bhopal Institute and did
-          a Java internship at CRISP India.
-
-          I've spent three awesome years at Sankey Business Solutions, where I've fueled my passion for programming,
-          technology, and business.
-        </p>
-        <!-- <div class="bio-data-stats">
-          <div class="bio-stats">
-            <h3>Design</h3>
-            <div class="bio-progress-bar">
-              <span>80%</span>
-            </div>
-          </div>
-          <div class="bio-stats">
-            <h3>HTML</h3>
-            <div class="bio-progress-bar bio-progress-2">
-              <span>99%</span>
-            </div>
-          </div>
-          <div class="bio-stats">
-            <h3>CSS</h3>
-            <div class="bio-progress-bar bio-progress-3">
-              <span>90%</span>
-            </div>
-          </div>
-          <div class="bio-stats">
-            <h3>JavaScript</h3>
-            <div class="bio-progress-bar bio-progress-4">
-              <span>85%</span>
-            </div>
-          </div>
-          <div class="bio-stats">
-            <h3>MERN</h3>
-            <div class="bio-progress-bar bio-progress-5">
-              <span>70%</span>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="bio-data-btn">
-          <a href="https://drive.google.com/file/d/1v6X3fKe7dzYTUK2ljwtHlLcLdbIETkhJ/view?usp=sharing"
-            target="_blank" class="btn" download> Downlaod CV </a>
-        </div> -->
+      <div>
+        <h2 data-number="20" class="counter-numbers">0+</h2>
+        <p>Happy clients</p>
+      </div>
+      <div>
+        <h2 data-number="100" class="counter-numbers">0+</h2>
+        <p>cups of coffee</p>
+      </div>
+      <div>
+        <h2 data-number="20" class="counter-numbers">0+</h2>
+        <p>real professionals</p>
       </div>
     </div>
   </section>
@@ -182,321 +218,70 @@
     ========================================  -->
   <section class="section-portfolio section " id="portfolio-section">
     <div class="container">
-      <h2 class="common-heading">Latest works</h2>
-      <p>
-        In my latest work, I have successfully delivered projects that have met clients' expectations and exceeded their
-        business goals. I continuously refine my skills to deliver innovative and
-        high-performance web solutions.
-      </p>
+      <h2 class="common-heading">See Our Latest<br><span class="red-color-txt">works</span> Have Met Client's <br><span class="light-blue-txt">requirements!</span></h2>
     </div>
 
-    <!-- <div class="p-btns">
-      <button class="btn p-btn " data-btn-num="1">Websites</button>
-      <button class="btn p-btn " data-btn-num="2">Youtube </button>
-      <button class="btn p-btn " data-btn-num="3">Design</button>
-    </div> -->
-
-    <div class="container grid grid-three-col portfolio-images">
-      <div class="img-ovelay p-btn--1">
-        <img src="images/folio/iwc.png" loading="lazy" alt="Independent Women Community" />
-        <div class="overlay">
-          <a href="https://aishfatimaiwc.in/" target="_blank" class="common-heading">Web SEO</a>
+    <div class="container grid grid-three-col latest-work-container">
+      <div class="img-ovelay p-btn--1 latest-work-box">
+        <div class="service-icon-title">
+          <img src="./images/clients/iwc.png" class="client-project-icon" alt="IWC | Independent Women Community"
+            title="IWC | Independent Women Community" />
+          <h3>IWC | Independent Women Community</h3>
         </div>
-      </div>
-
-      <div class="img-ovelay p-btn--3">
-        <img src="images/folio/4.jpg" loading="lazy" alt="portfolio images " />
-        <div class="overlay">
-          <a href="#" target="_blank" class="common-heading">Project 2</a>
-        </div>
-      </div>
-
-      <div class="img-ovelay p-btn--1">
-        <img src="images/folio/3.jpg" loading="lazy" alt="portfolio images " />
-        <div class="overlay">
-          <a href="" target="_blank" class="common-heading">Project 3</a>
-        </div>
-      </div>
-      <div class="img-ovelay p-btn--1 p-btn--2">
-        <img src="images/folio/4.jpg" loading="lazy" alt="portfolio images " />
-        <div class="overlay">
-          <a href="" target="_blank" class="common-heading">Project 4</a>
-        </div>
-      </div>
-      <div class="img-ovelay p-btn--2">
-        <img src="images/folio/5.jpg" loading="lazy" alt="portfolio images " />
-        <div class="overlay">
-          <a href="" target="_blank" class="common-heading">Project 5</a>
-        </div>
-      </div>
-      <div class="img-ovelay p-btn--1">
-        <img src="images/folio/1.jpg" loading="lazy" alt="portfolio images " />
-        <div class="overlay">
-          <a href="" target="_blank" class="common-heading">Project 6</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================================== 
-          work completed counter section Start  
-    ========================================  -->
-
-  <section class="section-work-data section ">
-    <div class="container grid grid-four-col">
-      <div>
-        <h2 data-number="20" class="counter-numbers">0</h2>
-        <p>project completed</p>
-      </div>
-      <div>
-        <h2 data-number="60" class="counter-numbers">0+</h2>
-        <p>Happy clients</p>
-      </div>
-      <div>
-        <h2 data-number="100" class="counter-numbers">0+</h2>
-        <p>cups of coffee</p>
-      </div>
-      <div>
-        <h2 data-number="30" class="counter-numbers">0+</h2>
-        <p>real professionals</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================================== 
-          Our Service Section Start  
-    ========================================  -->
-  <section class="section-services section section--hidden">
-    <div class="container">
-      <h2 class="common-heading">Service Offers</h2>
-      <p>
-        Our services including Web Application Development, Mobile Application Development, and Web SEO. If there is any
-        thing which
-        is in your mind we would definitely like to connect with you.
-      </p>
-    </div>
-
-    <div class="container grid grid-three-col">
-      <div class="service-box">
-        <ion-icon name="logo-react" class="serive-icon"></ion-icon>
-        <h3>web development</h3>
-        <p>
-          We offer comprehensive web development services, providing tailor-made solutions to meet our customers' unique
-          needs.
+        <p class="service-para">
+          <ion-icon name="checkmark-outline"></ion-icon> Host Existing Website<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Delivered On-time<br>
+          <ion-icon name="checkmark-outline"></ion-icon> SSL Integration<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Google SEO Changes<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Affordable Prices<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Effective Results<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Listed Website On Google<br>
         </p>
-      </div>
-
-      <div class="service-box">
-        <ion-icon class="serive-icon" name="grid-outline"></ion-icon>
-        <h3>Mobile App</h3>
-        <p>
-          We specialize in mobile app development, creating customized solutions that deliver seamless user experiences
-          across iOS and Android platforms.
-        </p>
-      </div>
-
-      <div class="service-box">
-        <ion-icon class="serive-icon" name="globe-outline"></ion-icon>
-        <h3>Web SEO</h3>
-        <p>
-          Our SEO services are designed to elevate your online presence and drive tangible results. We specialize in
-          optimizing websites to improve search engine rankings, enhance visibility, and attract organic traffic.
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ======================================== 
-          Our Resume Section Start  
-    ========================================  -->
-  <section class="section-resume section ">
-    <div class="container grid grid-two-col">
-      <!-- resume left side  -->
-      <div class="resume-img">
-        <img src="images/software-developer.svg" alt="My Freelancer and Software Developer" loading="lazy"
-          class="lazy-img" />
-      </div>
-
-      <!-- resume right side  -->
-      <div class="resume-data">
-        <h2 class="common-heading">resume</h2>
-        <p class="resume-para">my work experience</p>
-
-        <div class="resume-data-subsection">
-          <div class="resume-data-left">
-            <h3>Sr. Solution Analyst</h3>
-            <div class="grid grid-two-col">
-              <p>
-                <ion-icon name="business-outline"></ion-icon> Sankey Business Solutions
-              </p>
-              <p>
-                <ion-icon name="location-outline"></ion-icon> Mumbai, India
-              </p>
-            </div>
-          </div>
-
-          <div class="resume-data-right">
-            <p class="resume-data-button">fulltime</p>
-            <p>
-              <ion-icon name="calendar-outline"></ion-icon> <span>Sept 2021 - Present </span>
-            </p>
-          </div>
+        <div class="overlay">
+          <a href="https://aishfatimaiwc.in/" target="_blank" class="common-heading">Visit IWC</a>
         </div>
+      </div>
 
-        <div class="resume-data-subsection">
-          <div class="resume-data-left">
-            <h3>Java Intern</h3>
-            <div class="grid grid-two-col">
-              <p>
-                <ion-icon name="business-outline"></ion-icon> CRISP
-              </p>
-              <p>
-                <ion-icon name="location-outline"></ion-icon> Bhopal, India
-              </p>
-            </div>
-          </div>
-
-          <div class="resume-data-right">
-            <p class="resume-data-button">fulltime</p>
-            <p>
-              <ion-icon name="calendar-outline"></ion-icon> <span>Jun 2020 - Aug 2020 </span>
-            </p>
-          </div>
+      <div class="img-ovelay p-btn--3 latest-work-box">
+        <div class="service-icon-title">
+          <ion-icon class="serive-icon" name="checkmark-circle-outline"></ion-icon>
+          <h3>News Articles</h3>
         </div>
+        <p class="service-para">
+          <ion-icon name="checkmark-outline"></ion-icon> Delivered Website On-time<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Fixed all bugs<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Implemented New Features<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Google SEO Changes<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Top Rank on Google<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Effective Results<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Listed Website On Google<br>
+        </p>
+        <div class="overlay">
+          <a href="#" target="_blank" class="common-heading">News Articles</a>
+        </div>
+      </div>
 
-        <!-- 2nd work experience  -->
-        <!-- <div class="resume-data-subsection">
-          <div class="resume-data-left">
-            <h3>Senior Front End Developer</h3>
-            <div class="grid grid-two-col">
-              <p>
-                <ion-icon name="business-outline"></ion-icon> Facebook, Inc.
-              </p>
-              <p>
-                <ion-icon name="location-outline"></ion-icon> San Francisco
-              </p>
-            </div>
-          </div>
-
-          <div class="resume-data-right">
-            <p class="resume-data-button">fulltime</p>
-            <p>
-              <ion-icon name="calendar-outline"></ion-icon> November 2021 -
-              Present
-            </p>
-          </div>
-        </div> -->
-
-        <!-- 3rd work experience  -->
-        <!-- <div class="resume-data-subsection">
-          <div class="resume-data-left">
-            <h3>Senior Front End Developer</h3>
-            <div class="grid grid-two-col">
-              <p>
-                <ion-icon name="business-outline"></ion-icon> Facebook, Inc.
-              </p>
-              <p>
-                <ion-icon name="location-outline"></ion-icon> San Francisco
-              </p>
-            </div>
-          </div>
-
-          <div class="resume-data-right">
-            <p class="resume-data-button">fulltime</p>
-            <p>
-              <ion-icon name="calendar-outline"></ion-icon>November 2021 -
-              Present
-            </p>
-          </div>
-        </div> -->
-
-        <!-- 4th work experience  -->
-        <!-- <div class="resume-data-subsection">
-          <div class="resume-data-left">
-            <h3>Senior Front End Developer</h3>
-            <div class="grid grid-two-col">
-              <p>
-                <ion-icon name="business-outline"></ion-icon> Facebook, Inc.
-              </p>
-              <p>
-                <ion-icon name="location-outline"></ion-icon> San Francisco
-              </p>
-            </div>
-          </div>
-
-          <div class="resume-data-right">
-            <p class="resume-data-button">fulltime</p>
-            <p>
-              <ion-icon name="calendar-outline"></ion-icon>November 2021 -
-              Present
-            </p>
-          </div>
-        </div> -->
-
-        <!-- Education section  -->
-        <div class="resume-data-bottom-subsection">
-          <p class="resume-para">Education</p>
-
-          <!-- 1st college  -->
-          <!-- <div class="resume-data-subsection margin-small">
-            <div class="resume-data-left">
-              <h3>Master in Computer Science</h3>
-              <div class="grid grid-two-col">
-                <p>
-                  <ion-icon name="business-outline"></ion-icon> Wadia College, Inc.
-                </p>
-                <p>
-                  <ion-icon name="location-outline"></ion-icon> Pune, MH
-                </p>
-              </div>
-            </div>
-
-            <div class="resume-data-right">
-              <p class="resume-data-button"> Masters</p>
-              <p>
-                <ion-icon name="calendar-outline"></ion-icon> <span>May 2016 - 2018 </span>
-              </p>
-            </div>
-          </div> -->
-
-          <!-- 2nd college  -->
-          <div class="resume-data-subsection ">
-            <div class="resume-data-left">
-              <h3>B-Tech</h3>
-              <div class="grid grid-two-col">
-                <p>
-                  <ion-icon name="business-outline"></ion-icon> SIRT College
-                </p>
-                <p>
-                  <ion-icon name="location-outline"></ion-icon> Bhopal, India
-                </p>
-              </div>
-            </div>
-
-            <div class="resume-data-right">
-              <p class="resume-data-button"> Bachelor </p>
-              <p>
-                <ion-icon name="calendar-outline"></ion-icon> <span>May 2017 - 2021 </span>
-              </p>
-            </div>
-          </div>
-          <!-- end  -->
+      <div class="img-ovelay p-btn--1 latest-work-box">
+        <div class="service-icon-title">
+          <ion-icon class="serive-icon" name="checkmark-circle-outline"></ion-icon>
+          <h3>Blog Website</h3>
+        </div>
+        <p class="service-para">
+          <ion-icon name="checkmark-outline"></ion-icon> Designed, Developed Blog Website<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Delivered On-time<br>
+          <ion-icon name="checkmark-outline"></ion-icon> SSL Integration<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Google SEO Changes<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Content Mangement System<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Affordable Prices<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Effective Results<br>
+          <ion-icon name="checkmark-outline"></ion-icon> Listed Website On Google<br>
+        </p>
+        <div class="overlay">
+          <a href="" target="_blank" class="common-heading">Blog Website</a>
         </div>
       </div>
     </div>
   </section>
-
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2394344541784534"
-    crossorigin="anonymous"></script>
-  <!-- home 1 -->
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2394344541784534" data-ad-slot="7378856593"
-    data-ad-format="auto" data-full-width-responsive="true"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-
-
 
   <!-- ======================================== 
           Our Testimonial Section Start  
@@ -504,7 +289,7 @@
 
   <section class="section section-testimonial ">
     <div class="container">
-      <h2 class="common-heading">Happy Client works</h2>
+      <h2 class="common-heading">Nothing Makes Us<br><span class="red-color-txt">Happier</span> Than hearing our <br><span class="light-blue-txt">Client satisfaction!</span></h2>
     </div>
     <!-- Slider main container -->
     <!-- Swiper -->
@@ -614,24 +399,14 @@
     </div>
   </section>
 
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2394344541784534"
-    crossorigin="anonymous"></script>
-  <!-- home 1 -->
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2394344541784534" data-ad-slot="7378856593"
-    data-ad-format="auto" data-full-width-responsive="true"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-
   <!-- ======================================== 
             Our  Cotnact Us Section   
       ========================================  -->
 
   <section class="section section-contact ">
     <div class="container contact-container">
-      <h2 class="common-heading">contact us</h2>
+      <h2 class="common-heading">We Value your input<br><span class="red-color-txt">Reach</span> out to your <br><span class="light-blue-txt">Freelancer!</span></h2>
     </div>
-
     <div class="section-contact-main contact-container">
       <form action="https://formspree.io/f/xdojknjv" onsubmit="return validate();" method="POST">
         <div class=" grid grid-two-col">
@@ -651,15 +426,6 @@
       </form>
     </div>
   </section>
-
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2394344541784534"
-    crossorigin="anonymous"></script>
-  <!-- home 1 -->
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2394344541784534" data-ad-slot="7378856593"
-    data-ad-format="auto" data-full-width-responsive="true"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
 
   <!-- ======================================== 
           Our footer Section   
@@ -718,7 +484,7 @@
 
     <div class="container">
       <div class="f-social-icons">
-        <a href="https://www.instagram.com/ali_furqan_09/" target="_blank">
+        <a href="https://www.instagram.com/ali_freelancer_/" target="_blank">
           <ion-icon class="icons-insta" name="logo-instagram"></ion-icon>
         </a>
 
@@ -753,6 +519,7 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./script/blog-script.js"></script>
   <script src="index.js"></script>
 </body>
 

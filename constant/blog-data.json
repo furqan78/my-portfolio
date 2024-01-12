@@ -1,19 +1,19 @@
 [
     {
-        "title": "How to implement Secure and Fast Encryption",
-        "content": "Organizations have few essential tools at their clearance to ensure strong cybersecurity which includes encryption, authentication, and authorization. Encryption is one of the most beneficial, first-level coats to protecting your data and staying cyber strong.",
-        "publish_date": "January 6, 2024",
-        "author": "Ali Furqan",
-        "author_img": "./images/furqan.png",
-        "redirect_path": "../Implement-fast-secure-encryption.html"
-    },
-    {
         "title": "How to deploy a website for free using GitHub",
         "content": "Various people face challenges to discover a free platform for website deployment. In this blog, we'll see the process of hosting a website using GitHub. Through GitHub, you can exhibit open-source systems, host a blog, or even share your resume.",
         "publish_date": "January 10, 2024",
         "author": "Ali Furqan",
         "author_img": "./images/furqan.png",
         "redirect_path": "../blog-html/deploy-website-using-github.html"
+    },
+    {
+        "title": "How to implement Secure and Fast Encryption",
+        "content": "Organizations have few essential tools at their clearance to ensure strong cybersecurity which includes encryption, authentication, and authorization. Encryption is one of the most beneficial, first-level coats to protecting your data and staying cyber strong.",
+        "publish_date": "January 6, 2024",
+        "author": "Ali Furqan",
+        "author_img": "./images/furqan.png",
+        "redirect_path": "../Implement-fast-secure-encryption.html"
     }
 ]
 

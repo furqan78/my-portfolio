@@ -182,46 +182,40 @@ const img_div = document.querySelectorAll(".img-ovelay");
 //  animated counter number
 // ========================================
 
-// const workSection = document.querySelector(".section-work-data");
+const workSection = document.querySelector(".section-work-data");
 
-// const workSectionObserve = (entries) => {
-//     const [entry] = entries;
-//     if (!entry.isIntersecting) return;
-//     console.log(entries);
+const workSectionObserve = (entries) => {
+    const [entry] = entries;
+    if (!entry.isIntersecting) return;
+    console.log(entries);
 
 
-//     const counterNum = document.querySelectorAll(".counter-numbers");
-//     // console.log(counterNum);
-//     const speed = 10;
+    const counterNum = document.querySelectorAll(".counter-numbers");
+    const speed = 15;
 
-//     counterNum.forEach((curNumber) => {
-//         const updateNumber = () => {
-//             const targetNumber = parseInt(curNumber.dataset.number);
-//             // console.log(targetNumber);
-//             const initialNumber = parseInt(curNumber.innerText);
-//             // console.log(initialNumber);
-//             const incrementNumber = Math.trunc(targetNumber / speed);
-//             // i am adding the value to the main number
-//             // console.log(incrementNumber);
+    counterNum.forEach((curNumber) => {
+        const updateNumber = () => {
+            const targetNumber = parseInt(curNumber.dataset.number);
+            const initialNumber = parseInt(curNumber.innerText);
+            const incrementNumber = Math.trunc(targetNumber / speed);
+            if (initialNumber < targetNumber) {
+                curNumber.innerText = `${initialNumber + incrementNumber}+`;
+                setTimeout(updateNumber, 120);
+            } else {
+                curNumber.innerText = `${targetNumber}+`;
+            }
 
-//             if (initialNumber < targetNumber) {
-//                 curNumber.innerText = `${initialNumber + incrementNumber}+`;
-//                 setTimeout(updateNumber, 120);
-//             } else {
-//                 curNumber.innerText = `${targetNumber}+`;
-//             }
+        };
+        updateNumber();
+    });
+};
 
-//         };
-//         updateNumber();
-//     });
-// };
+const workSecObserver = new IntersectionObserver(workSectionObserve, {
+    root: null,
+    threshold: 0,
+});
 
-// const workSecObserver = new IntersectionObserver(workSectionObserve, {
-//     root: null,
-//     threshold: 0,
-// });
-
-// workSecObserver.observe(workSection);
+workSecObserver.observe(workSection);
 
 var i = 0;
 var j = 0;
@@ -237,8 +231,6 @@ const textChange = document.getElementById("heading-txt-change");
 if(textChange){
         typeWriter();
 }
-
-
 
 function typeWriter() {
     if (mainText[j]) {
@@ -260,38 +252,6 @@ function typeWriter() {
         }
     }
 }
-
-// function typeWriter() {
-//     for (let i = 0; i < 5; i++) {
-//         switch (true) {
-//             case i == 1:
-//                 document.getElementById("heading-txt-change").innerHTML = '';
-//                 mainText = txt1;
-//                 break;
-
-//             case i == 2:
-//                 document.getElementById("heading-txt-change").innerHTML = '';
-//                 mainText = txt2;
-//                 break;
-
-//             case i == 3:
-//                 document.getElementById("heading-txt-change").innerHTML = '';
-//                 mainText = txt3;
-//                 break;
-
-//             case i == 4:
-//                 document.getElementById("heading-txt-change").innerHTML = '';
-//                 mainText = txt4;
-//                 break;
-//         }
-
-//         for (let j = 0; j < mainText.length; j++) {
-//             setTimeout(() => {
-//                 document.getElementById("heading-txt-change").innerHTML += mainText.charAt(j);
-//             }, speed);
-//         }
-//     }
-// }
 
 function validate() {
     var username = document.getElementById('username').value;
