@@ -219,10 +219,6 @@ workSecObserver.observe(workSection);
 
 var i = 0;
 var j = 0;
-var txt1 = 'Ali Furqan';
-var txt2 = 'A Freelancer';
-var txt3 = 'A Developer';
-var txt4 = 'A Youtuber';
 var mainText = ['Ali Furqan','A Developer','A Freelancer', 'A Youtuber'];
 var speed = 70;
 
