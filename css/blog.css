@@ -56,4 +56,11 @@
 	padding-right: 0.5rem;
 }
 
+
 /* noteBoxes css end */
+
+@media (max-width: 980px) {
+    .noteBoxes{
+        width: 100%;
+    }
+}
