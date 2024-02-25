@@ -75,6 +75,11 @@ li {
   list-style: none;
 }
 
+.ali-furqan-name-link {
+  text-decoration: underline;
+  color: var(--light-grey);
+}
+
 .btn {
   background: -webkit-linear-gradient(
     0deg,
@@ -110,6 +115,7 @@ li {
 
 .section {
   padding: 9rem 1rem;
+  margin-top: 8rem;
 }
 
 .container {
@@ -214,8 +220,8 @@ and we need to hide the close menu icon
 
 /* sticky Navbar */
 .header {
-  /* position: fixed; uncomment to make navbar sticky */
-  position: relative;
+  position: fixed; 
+  /* position: relative; uncomment to make navbar non sticky*/
   top: 0;
   left: 0;
   height: 8rem;
@@ -871,6 +877,11 @@ textarea {
   border: none;
 }
 
+.text-anchor-link {
+  color: cadetblue;
+  font-weight: 600;
+}
+
 /* ===========================================
 Footer Section
 ======================================= */
@@ -905,6 +916,11 @@ Footer Section
   font-size: 1.8rem;
   color: #adadad;
   text-transform: capitalize;
+}
+
+.f-links li {
+  display: flex;
+  align-items: center;
 }
 
 .f-links span,
